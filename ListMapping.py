@@ -1,6 +1,5 @@
 char_list = []
 word_list = []
-
 list1_size = int(input("Enter number of elements in list 1 : "))
 for value in range(list1_size):
     item = input("Item : ")
@@ -12,24 +11,21 @@ for value in range(list2_size):
     word_list.append(item)
 
 dict = {}
-
 if len(char_list)>len(word_list):
     max_range = len(word_list)
-    for i in range(max_range):
-        key = char_list[i]
-        dict[key]=word_list[i]
+    for item in range(max_range):
+        key = char_list[item]
+        dict[key]=word_list[item]
 
 elif len(char_list)<len(word_list):
     max_range = len(char_list)
-    for i in range(max_range):
-        key = char_list[i]
-        dict[key]=word_list[i]
+    for item in range(max_range):
+        key = char_list[item]
+        dict[key]=word_list[item]
 
 else:
     max_range = len(char_list)
-    for i in range(max_range):
-        key = char_list[i]
-        dict[key]=word_list[i]
-
+    for item in range(max_range):
+        key = char_list[item]
+        dict[key]=word_list[item]
 print(dict)
-    
